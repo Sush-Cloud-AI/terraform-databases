@@ -3,7 +3,7 @@ module "docdb" {
     ENV = var.ENV
 }
 
-module "docdb" {
+module "redis" {
     source = "./vendor/modules/redis"   # path created after running terrfile -f command 
     ENV = var.ENV
 }
