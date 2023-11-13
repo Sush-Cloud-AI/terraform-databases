@@ -1,6 +1,9 @@
 module "docdb" {
     source = "./vendor/modules/docdb"   # path created after running terrfile -f command 
     ENV = var.ENV
+    # DOCDB variables
+    DOCDB_INSTANCE_COUNT = var.DOCDB_INSTANCE_COUNT
+    DOCDB_INSTANCE_TYPE = var.DOCDB_INSTANCE_TYPE
 }
 
 module "redis" {
