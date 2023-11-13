@@ -7,7 +7,7 @@ MYSQL_INSTANCE_TYPE = "db.t3.micro"
 
 # DOCDB variables
 DOCDB_INSTANCE_COUNT = 1
-DOCDB_INSTANCE_TYPE = "db.t3.medium"
+DOCDB_INSTANCE_TYPE = "db.t3.small"
 DOCDB_INSTANCE_PORT = 27017
 
 # Redis variables
