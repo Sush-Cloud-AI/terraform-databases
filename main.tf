@@ -15,6 +15,13 @@ module "redis" {
     REDIS_PORT = var.REDIS_PORT
     REDIS_INSTANCE_COUNT = var.REDIS_INSTANCE_COUNT
 }
+## debug 
+output "redis" {
+value = module.redis.redis
+  
+}
+  
+
 
 module "mysql" {
     source = "./vendor/modules/mysql"   # path created after running terrfile -f command 
