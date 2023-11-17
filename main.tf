@@ -15,11 +15,7 @@ module "redis" {
     REDIS_PORT = var.REDIS_PORT
     REDIS_INSTANCE_COUNT = var.REDIS_INSTANCE_COUNT
 }
-## debug 
-output "redis" {
-value = module.redis.redis
-  
-}
+
   
 
 
@@ -32,5 +28,9 @@ module "mysql" {
 }
 
 
-
+# ## debug to get the node details
+# output "redis" {
+# value = module.redis.redis
+  
+# }
 
